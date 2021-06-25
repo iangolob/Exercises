@@ -1,0 +1,18 @@
+package z2;
+
+import java.util.Map;
+import java.util.TreeMap;
+import java.util.*;
+public class MotoGP {
+	private Map<Integer, String> teams;
+	 private Map<Integer, String> drivers;
+	private Map<Integer, Map<Integer, Integer>> standings;    
+	private Map<Integer, Integer> driverTeamIdentification;
+	public static Map<Integer, String> teamRankingCalculation(Map<Integer, Map<Integer, Integer>> standings){
+		Map<Integer,String> ranking = new TreeMap<>();
+		
+		
+		
+		
+	}
+}

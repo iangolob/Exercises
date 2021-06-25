@@ -1,0 +1,10 @@
+12 Bulgaria
+10 Italy
+8 UK
+7 USA
+6 Muto Land
+5 Specialist 
+4 Chile
+3 Sweden
+2 Ireland
+1 Portugal

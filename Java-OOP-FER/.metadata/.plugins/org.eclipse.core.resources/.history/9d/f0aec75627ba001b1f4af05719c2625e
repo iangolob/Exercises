@@ -1,0 +1,27 @@
+package z2;
+
+import java.util.Map;
+import java.util.TreeMap;
+import java.util.*;
+public class MotoGP {
+	static Map<Integer, String> teams;
+	static Map<Integer, String> drivers;
+	static Map<Integer, Map<Integer, Integer>> standings;    
+	static Map<Integer, Integer> driverTeamIdentification;
+	public static Map<Integer, String> teamRankingCalculation(Map<Integer, Map<Integer, Integer>> standings){
+		Map<Integer,String> ranking = new TreeMap<>();
+		Map<Integer,Integer> idRanking= new HashMap<>();
+		for(Integer driverId:standings.keySet()) {
+			int points=0;
+			for(Integer i:standings.get(driverId).values())
+				points+=i;
+			int teamId= driverTeamIdentification.get(driverId);
+			idRanking.put(teamId, idRanking.getOrDefault(teamId,0)+points);
+		}
+		for(var entry:idRanking.entrySet())
+			ranking.put(entry.getValue(),	entry.getKey());
+		return ranking;
+		
+		
+	}
+}

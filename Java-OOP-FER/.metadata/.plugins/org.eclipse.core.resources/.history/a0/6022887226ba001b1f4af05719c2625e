@@ -1,0 +1,13 @@
+package z2;
+
+import java.util.Map;
+
+public class MotoGP {
+	private Map<Integer, String> teams= new HashMap() {[2, "Marc Marquez"], [1, "Pol Espargaro"], [3, "Johan Zarco"]};
+	 private Map<Integer, String> drivers;
+	private Map<Integer, Map<Integer, Integer>> standings;    
+	private Map<Integer, Integer> driverTeamIdentification;
+	public static Map<Integer, String> teamRankingCalculation(Map<Integer, Map<Integer, Integer>> standings){
+		
+	}
+}
